@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-My_Sample_Suite">
+              <span class="suite-name border-failed">My Sample Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-My_Sample_Suite">
+                    <span>C:\Users\sachin.bhongle\Documents\AssetWorkspace\History\WorkingCopy\TestAutomationHybrid\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-My_Sample_Suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-My_Sample_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-My_Sample_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-My_Sample_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-My_Sample_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-My_Sample_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 2 failed,  5 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="hide-methods failed suite-My_Sample_Suite"> (hide)</a> <!-- hide-methods failed suite-My_Sample_Suite -->
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="show-methods failed suite-My_Sample_Suite"> (show)</a> <!-- show-methods failed suite-My_Sample_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-My_Sample_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_2" hash-for-method="LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})">LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_1" hash-for-method="LoginTest({Username=wrongID, ExpectedResult=Success, Pass=test, Runmode=Y, Browser=Chrome})">LoginTest({Username=wrongID, ExpectedResult=Success, Pass=test, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-My_Sample_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="hide-methods skipped suite-My_Sample_Suite"> (hide)</a> <!-- hide-methods skipped suite-My_Sample_Suite -->
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="show-methods skipped suite-My_Sample_Suite"> (show)</a> <!-- show-methods skipped suite-My_Sample_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-My_Sample_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_3" hash-for-method="LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})">LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_3" hash-for-method="LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})">LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_3" hash-for-method="LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})">LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_2" hash-for-method="LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})">LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_1" hash-for-method="LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})">LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-My_Sample_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="hide-methods passed suite-My_Sample_Suite"> (hide)</a> <!-- hide-methods passed suite-My_Sample_Suite -->
+                      <a href="#" panel-name="suite-My_Sample_Suite" class="show-methods passed suite-My_Sample_Suite"> (show)</a> <!-- show-methods passed suite-My_Sample_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-My_Sample_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_2" hash-for-method="LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})">LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Sample_Suite" title="demo.acn.internal.tests.Sample_Test_1" hash-for-method="LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Mozilla})">LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-My_Sample_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_Sample_Suite" class="panel My_Sample_Suite">
+          <div class="suite-My_Sample_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">demo.acn.internal.tests.Sample_Test_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=wrongID, ExpectedResult=Success, Pass=test, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=wrongID, ExpectedResult=Success, Pass=test, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=wrongID, ExpectedResult=Success, Pass=test, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login functionality failing. Expected: Login Success but Actual: Login Failure
+	at demo.acn.internal.utilities.GenericKeywords.reportFailure(GenericKeywords.java:275)
+	at demo.acn.internal.utilities.AppKeywords.verifylogin(AppKeywords.java:57)
+	at demo.acn.internal.utilities.Keywords.executeKeywords(Keywords.java:58)
+	at demo.acn.internal.tests.Sample_Test_1.LoginTest(Sample_Test_1.java:50)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-failed -->
+          <div class="suite-My_Sample_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">demo.acn.internal.tests.Sample_Test_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login functionality failing. Expected: Login Success but Actual: Login Failure
+	at demo.acn.internal.utilities.GenericKeywords.reportFailure(GenericKeywords.java:275)
+	at demo.acn.internal.utilities.AppKeywords.verifylogin(AppKeywords.java:57)
+	at demo.acn.internal.utilities.Keywords.executeKeywords(Keywords.java:58)
+	at demo.acn.internal.tests.Sample_Test_2.LoginTest(Sample_Test_2.java:50)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-failed -->
+          <div class="suite-My_Sample_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">demo.acn.internal.tests.Sample_Test_3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Testcase as Runmode is set to &apos;N&apos;
+	at demo.acn.internal.utilities.DataUtility.TestCaseIsRun(DataUtility.java:69)
+	at demo.acn.internal.tests.Sample_Test_3.LoginTest(Sample_Test_3.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Testcase as Runmode is set to &apos;N&apos;
+	at demo.acn.internal.utilities.DataUtility.TestCaseIsRun(DataUtility.java:69)
+	at demo.acn.internal.tests.Sample_Test_3.LoginTest(Sample_Test_3.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the Testcase as Runmode is set to &apos;N&apos;
+	at demo.acn.internal.utilities.DataUtility.TestCaseIsRun(DataUtility.java:69)
+	at demo.acn.internal.tests.Sample_Test_3.LoginTest(Sample_Test_3.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-skipped -->
+          <div class="suite-My_Sample_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">demo.acn.internal.tests.Sample_Test_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the testrun as Runmode is set to &apos;N&apos;
+	at demo.acn.internal.tests.Sample_Test_1.LoginTest(Sample_Test_1.java:45)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-skipped -->
+          <div class="suite-My_Sample_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">demo.acn.internal.tests.Sample_Test_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the testrun as Runmode is set to &apos;N&apos;
+	at demo.acn.internal.tests.Sample_Test_2.LoginTest(Sample_Test_2.java:45)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-skipped -->
+          <div class="suite-My_Sample_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo.acn.internal.tests.Sample_Test_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Mozilla})">
+                  </a> <!-- LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Mozilla}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Mozilla})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-passed -->
+          <div class="suite-My_Sample_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo.acn.internal.tests.Sample_Test_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Sample_Suite-class-passed -->
+        </div> <!-- panel My_Sample_Suite -->
+        <div panel-name="test-xml-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sachin.bhongle\Documents\AssetWorkspace\History\WorkingCopy\TestAutomationHybrid\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;My Sample Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Sample test 1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demo.acn.internal.tests.Sample_Test_1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sample test 1 --&gt;
+  &lt;test name=&quot;Sample test 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demo.acn.internal.tests.Sample_Test_2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sample test 2 --&gt;
+  &lt;test name=&quot;Sample test 3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demo.acn.internal.tests.Sample_Test_3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sample test 3 --&gt;
+&lt;/suite&gt; &lt;!-- My Sample Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Sample test 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sample test 2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sample test 3 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_Sample_Suite');
+function tableData_My_Sample_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'LoginTest')
+data.setCell(0, 2, 'demo.acn.internal.tests.Sample_Test_1')
+data.setCell(0, 3, 28899);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginTest')
+data.setCell(1, 2, 'demo.acn.internal.tests.Sample_Test_2')
+data.setCell(1, 3, 25038);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginTest')
+data.setCell(2, 2, 'demo.acn.internal.tests.Sample_Test_2')
+data.setCell(2, 3, 20886);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginTest')
+data.setCell(3, 2, 'demo.acn.internal.tests.Sample_Test_1')
+data.setCell(3, 3, 20766);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginTest')
+data.setCell(4, 2, 'demo.acn.internal.tests.Sample_Test_3')
+data.setCell(4, 3, 12);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'LoginTest')
+data.setCell(5, 2, 'demo.acn.internal.tests.Sample_Test_2')
+data.setCell(5, 3, 7);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginTest')
+data.setCell(6, 2, 'demo.acn.internal.tests.Sample_Test_1')
+data.setCell(6, 3, 5);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'LoginTest')
+data.setCell(7, 2, 'demo.acn.internal.tests.Sample_Test_3')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'LoginTest')
+data.setCell(8, 2, 'demo.acn.internal.tests.Sample_Test_3')
+data.setCell(8, 3, 2);
+window.suiteTableData['My_Sample_Suite']= { tableData: data, tableDiv: 'times-div-My_Sample_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-My_Sample_Suite">
+              </div> <!-- times-div-My_Sample_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My Sample Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_Sample_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_3</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">211 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">211 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Mozilla})</span>
+                <span class="method-start">211 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_3</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">228 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">938 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</span>
+                <span class="method-start">939 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">945 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">1097 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">1097 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">1102 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">25251 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">26529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest({Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">26529 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_1</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">29111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">29796 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</span>
+                <span class="method-start">29796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">29810 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">29853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest({Username=wrongID, ExpectedResult=Success, Pass=test, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">29854 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">47416 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">48277 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome})</span>
+                <span class="method-start">48277 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">48286 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo.acn.internal.tests.Sample_Test_1</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">50622 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

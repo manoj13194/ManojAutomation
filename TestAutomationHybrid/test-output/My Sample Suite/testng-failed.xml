@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My Sample Suite]" parallel="tests">
+  <test name="Sample test 3(failed)" parallel="tests">
+    <classes>
+      <class name="demo.acn.internal.tests.Sample_Test_3">
+        <methods>
+          <include name="LoginTest" invocation-numbers="0 1 2"/>
+          <include name="endTest"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- demo.acn.internal.tests.Sample_Test_3 -->
+    </classes>
+  </test> <!-- Sample test 3(failed) -->
+  <test name="Sample test 2(failed)" parallel="tests">
+    <classes>
+      <class name="demo.acn.internal.tests.Sample_Test_2">
+        <methods>
+          <include name="endTest"/>
+          <include name="LoginTest" invocation-numbers="1 2"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- demo.acn.internal.tests.Sample_Test_2 -->
+    </classes>
+  </test> <!-- Sample test 2(failed) -->
+  <test name="Sample test 1(failed)" parallel="tests">
+    <classes>
+      <class name="demo.acn.internal.tests.Sample_Test_1">
+        <methods>
+          <include name="LoginTest" invocation-numbers="1 2"/>
+          <include name="endTest"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- demo.acn.internal.tests.Sample_Test_1 -->
+    </classes>
+  </test> <!-- Sample test 1(failed) -->
+</suite> <!-- Failed suite [My Sample Suite] -->

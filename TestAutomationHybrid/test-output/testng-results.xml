@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="5" failed="2" ignored="0" total="9" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My Sample Suite" duration-ms="51629" started-at="2018-02-16T15:22:30Z" finished-at="2018-02-16T15:23:22Z">
+    <groups>
+    </groups>
+    <test name="Sample test 3" duration-ms="1251" started-at="2018-02-16T15:22:30Z" finished-at="2018-02-16T15:22:31Z">
+      <class name="demo.acn.internal.tests.Sample_Test_3">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="startTest" is-config="true" duration-ms="209" started-at="2018-02-16T20:52:30Z" finished-at="2018-02-16T20:52:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="LoginTest" duration-ms="12" started-at="2018-02-16T20:52:30Z" data-provider="getData" finished-at="2018-02-16T20:52:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Testcase as Runmode is set to 'N']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Testcase as Runmode is set to 'N'
+	at demo.acn.internal.utilities.DataUtility.TestCaseIsRun(DataUtility.java:69)
+	at demo.acn.internal.tests.Sample_Test_3.LoginTest(Sample_Test_3.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="endTest" is-config="true" duration-ms="710" started-at="2018-02-16T20:52:30Z" finished-at="2018-02-16T20:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="startTest" is-config="true" duration-ms="1" started-at="2018-02-16T20:52:31Z" finished-at="2018-02-16T20:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="LoginTest" duration-ms="2" started-at="2018-02-16T20:52:31Z" data-provider="getData" finished-at="2018-02-16T20:52:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Testcase as Runmode is set to 'N']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Testcase as Runmode is set to 'N'
+	at demo.acn.internal.utilities.DataUtility.TestCaseIsRun(DataUtility.java:69)
+	at demo.acn.internal.tests.Sample_Test_3.LoginTest(Sample_Test_3.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="endTest" is-config="true" duration-ms="151" started-at="2018-02-16T20:52:31Z" finished-at="2018-02-16T20:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="SKIP" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="LoginTest" duration-ms="3" started-at="2018-02-16T20:52:31Z" data-provider="getData" finished-at="2018-02-16T20:52:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the Testcase as Runmode is set to 'N']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the Testcase as Runmode is set to 'N'
+	at demo.acn.internal.utilities.DataUtility.TestCaseIsRun(DataUtility.java:69)
+	at demo.acn.internal.tests.Sample_Test_3.LoginTest(Sample_Test_3.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="startTest" is-config="true" duration-ms="0" started-at="2018-02-16T20:52:31Z" finished-at="2018-02-16T20:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_3@6356695f]" name="endTest" is-config="true" duration-ms="84" started-at="2018-02-16T20:52:31Z" finished-at="2018-02-16T20:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- demo.acn.internal.tests.Sample_Test_3 -->
+    </test> <!-- Sample test 3 -->
+    <test name="Sample test 2" duration-ms="48401" started-at="2018-02-16T15:22:30Z" finished-at="2018-02-16T15:23:18Z">
+      <class name="demo.acn.internal.tests.Sample_Test_2">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="startTest" is-config="true" duration-ms="211" started-at="2018-02-16T20:52:30Z" finished-at="2018-02-16T20:52:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="LoginTest" duration-ms="25038" started-at="2018-02-16T20:52:30Z" data-provider="getData" finished-at="2018-02-16T20:52:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="endTest" is-config="true" duration-ms="1278" started-at="2018-02-16T20:52:55Z" finished-at="2018-02-16T20:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="FAIL" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="LoginTest" duration-ms="20886" started-at="2018-02-16T20:52:57Z" data-provider="getData" finished-at="2018-02-16T20:53:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=BLANK, ExpectedResult=Success, Pass=BLANK, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login functionality failing. Expected: Login Success but Actual: Login Failure]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login functionality failing. Expected: Login Success but Actual: Login Failure
+	at org.testng.Assert.fail(Assert.java:93)
+	at demo.acn.internal.utilities.GenericKeywords.reportFailure(GenericKeywords.java:275)
+	at demo.acn.internal.utilities.AppKeywords.verifylogin(AppKeywords.java:57)
+	at demo.acn.internal.utilities.Keywords.executeKeywords(Keywords.java:58)
+	at demo.acn.internal.tests.Sample_Test_2.LoginTest(Sample_Test_2.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="startTest" is-config="true" duration-ms="0" started-at="2018-02-16T20:52:57Z" finished-at="2018-02-16T20:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="endTest" is-config="true" duration-ms="861" started-at="2018-02-16T20:53:18Z" finished-at="2018-02-16T20:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="SKIP" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="LoginTest" duration-ms="7" started-at="2018-02-16T20:53:18Z" data-provider="getData" finished-at="2018-02-16T20:53:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the testrun as Runmode is set to 'N']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the testrun as Runmode is set to 'N'
+	at demo.acn.internal.tests.Sample_Test_2.LoginTest(Sample_Test_2.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="startTest" is-config="true" duration-ms="0" started-at="2018-02-16T20:53:18Z" finished-at="2018-02-16T20:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_2@8dbdac1]" name="endTest" is-config="true" duration-ms="52" started-at="2018-02-16T20:53:18Z" finished-at="2018-02-16T20:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- demo.acn.internal.tests.Sample_Test_2 -->
+    </test> <!-- Sample test 2 -->
+    <test name="Sample test 1" duration-ms="51629" started-at="2018-02-16T15:22:30Z" finished-at="2018-02-16T15:23:22Z">
+      <class name="demo.acn.internal.tests.Sample_Test_1">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="startTest" is-config="true" duration-ms="211" started-at="2018-02-16T20:52:30Z" finished-at="2018-02-16T20:52:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="LoginTest" duration-ms="28899" started-at="2018-02-16T20:52:30Z" data-provider="getData" finished-at="2018-02-16T20:52:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=wrongID, ExpectedResult=Failure, Pass=test, Runmode=Y, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="endTest" is-config="true" duration-ms="685" started-at="2018-02-16T20:52:59Z" finished-at="2018-02-16T20:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="SKIP" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="LoginTest" duration-ms="5" started-at="2018-02-16T20:53:00Z" data-provider="getData" finished-at="2018-02-16T20:53:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=BLANK, ExpectedResult=Failure, Pass=BLANK, Runmode=N, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the testrun as Runmode is set to 'N']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the testrun as Runmode is set to 'N'
+	at demo.acn.internal.tests.Sample_Test_1.LoginTest(Sample_Test_1.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="startTest" is-config="true" duration-ms="0" started-at="2018-02-16T20:53:00Z" finished-at="2018-02-16T20:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="endTest" is-config="true" duration-ms="43" started-at="2018-02-16T20:53:00Z" finished-at="2018-02-16T20:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="startTest" is-config="true" duration-ms="1" started-at="2018-02-16T20:53:00Z" finished-at="2018-02-16T20:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="LoginTest(java.util.Hashtable)[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="LoginTest" duration-ms="20766" started-at="2018-02-16T20:53:00Z" data-provider="getData" finished-at="2018-02-16T20:53:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=wrongID, ExpectedResult=Success, Pass=test, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login functionality failing. Expected: Login Success but Actual: Login Failure]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login functionality failing. Expected: Login Success but Actual: Login Failure
+	at org.testng.Assert.fail(Assert.java:93)
+	at demo.acn.internal.utilities.GenericKeywords.reportFailure(GenericKeywords.java:275)
+	at demo.acn.internal.utilities.AppKeywords.verifylogin(AppKeywords.java:57)
+	at demo.acn.internal.utilities.Keywords.executeKeywords(Keywords.java:58)
+	at demo.acn.internal.tests.Sample_Test_1.LoginTest(Sample_Test_1.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:demo.acn.internal.tests.Sample_Test_1@5119fb47]" name="endTest" is-config="true" duration-ms="942" started-at="2018-02-16T20:53:21Z" finished-at="2018-02-16T20:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- demo.acn.internal.tests.Sample_Test_1 -->
+    </test> <!-- Sample test 1 -->
+  </suite> <!-- My Sample Suite -->
+</testng-results>

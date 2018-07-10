@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Sample Suite">
+<test name="Sample test 1">
+    <classes>
+        <class name="demo.acn.internal.tests.Sample_Test_1" ></class>  
+    </classes>
+</test>
+
+<test name="Sample test 2">
+    <classes>
+        <class name="demo.acn.internal.tests.Sample_Test_2" ></class>  
+    </classes>
+</test>
+
+<test name="Sample test 3">
+    <classes>
+        <class name="demo.acn.internal.tests.Sample_Test_3" ></class>  
+    </classes>
+</test>
+</suite>
